@@ -20,4 +20,4 @@ deploy:
   image: python:latest
   script:
     - pip install awscli
-    - aws ecs update-service --cluster fargate-cluster --service fargate-docker-service --force-new-deployment --region eu-central-1
+    - aws ecs update-service --cluster braunschweig-fargate --service fargate-docker-service --force-new-deployment --region eu-central-1
